@@ -45,11 +45,11 @@ messageForm[0].addEventListener("submit", (event) => {
     removeButton.addEventListener("click",(e)=>{
         const entry = removeButton.parentNode;
         entry.remove();
-        displyMessage();
+        hideOrShowMessageSection();
     })
 
     editButton.addEventListener("click",(e) =>{
-        if(editButton.textContent === 'edit'){
+        if (editButton.textContent === 'edit') {
         const editMessage = newMessage.childNodes[2];
         const inputMessage = document.createElement('input');
         inputMessage.type="text";
@@ -57,7 +57,7 @@ messageForm[0].addEventListener("submit", (event) => {
         newMessage.insertBefore(inputMessage,editMessage);
         newMessage.removeChild(editMessage);
         editButton.textContent = 'save';
-        }else if(editButton.textContent === 'save'){
+        } else if (editButton.textContent === 'save') {
             const inputMessage = newMessage.childNodes[2];
             const editMessage = document.createElement('span');
             editMessage.type="text";
@@ -71,12 +71,12 @@ messageForm[0].addEventListener("submit", (event) => {
     newMessage.appendChild(editButton);
     newMessage.appendChild(removeButton);
     messageList.appendChild(newMessage);
-    displyMessage();
+    hideOrShowMessageSection();
 
-    function displyMessage(){
-        if(messageList.querySelector("li") != null){
+    function hideOrShowMessageSection(){
+        if (messageList.querySelector("li") != null) {
             document.getElementById("messages").style.display = "block";
-        }else{
+        } else {
             document.getElementById("messages").style.display = "none";
         }
     }
