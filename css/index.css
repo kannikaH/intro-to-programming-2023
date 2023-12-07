@@ -15,9 +15,21 @@ h2{
     font-size: 1.8em;
     font-weight: 600;
 }
-li {
+#experienceSection {
+    padding: 5px;
+    margin: 2px;
+    color: rgb(12, 91, 94);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     list-style-image:url("/images/listImg.png");
     size: 0ch;
+}
+
+#skills {
+    padding: 5px;
+    margin: 5px;
+    color: rgb(29, 146, 5);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    list-style:circle;
 }
 label{
     font-size: 1.25em;
@@ -37,16 +49,18 @@ input {
     transition: 0.2s;
     outline: none;
     font-weight: 300;
+    font-size: 20px;
  }
  textarea{
     width: 25%;
     padding: 8px 10px;
     margin: 5px 0;
     box-sizing: border-box;
-    color: blue;
+    color: rgb(3, 70, 90);
     border: 2px solid #504e4e;
     transition: 0.2s;
     outline: none;
+    font-size: 1rem;
  }
  button[type=submit]{
     background-color: #046843;
@@ -60,18 +74,18 @@ input {
     border-radius: 3px;
  }
  button{
-    background-color: #046843;
+    background-color: #680404;
     border: none;
     color: white;
     padding: 8px 20px;
     margin: 4px 2px;
     font-size: 18px;
-    box-shadow: rgb(6, 143, 52) 0 1px 0 0 inset;
+    box-shadow: rgb(248, 127, 123) 0 1px 0 0 inset;
     border: 1px solid transparent;
     border-radius: 3px;
  }
  footer{
-    padding: 5px;
+    padding: 1px;
     background-color:darkkhaki;
     color:rgb(58, 58, 3);
     text-align: center;
