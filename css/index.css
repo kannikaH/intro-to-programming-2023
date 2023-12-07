@@ -37,7 +37,9 @@ label{
 }
 form{
     padding: 10px 15px;
-    margin: 5px 0;
+    margin: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
 }
 input {
     color: blue;
@@ -62,17 +64,6 @@ input {
     outline: none;
     font-size: 1rem;
  }
- button[type=submit]{
-    background-color: #046843;
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    margin: 4px 2px;
-    font-size: 1.2em;
-    box-shadow: rgb(6, 143, 52) 0 1px 0 0 inset;
-    border: 1px solid transparent;
-    border-radius: 3px;
- }
  button{
     background-color: #680404;
     border: none;
@@ -81,6 +72,17 @@ input {
     margin: 4px 2px;
     font-size: 18px;
     box-shadow: rgb(248, 127, 123) 0 1px 0 0 inset;
+    border: 1px solid transparent;
+    border-radius: 3px;
+ }
+ #submitButton{
+    background-color: #046843;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    margin: 4px 2px;
+    font-size: 1.2em;
+    box-shadow: rgb(6, 143, 52) 0 1px 0 0 inset;
     border: 1px solid transparent;
     border-radius: 3px;
  }
