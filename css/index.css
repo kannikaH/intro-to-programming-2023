@@ -16,20 +16,25 @@ h2{
     font-weight: 600;
 }
 #experienceSection {
-    padding: 5px;
-    margin: 2px;
+    /*padding: 5px;
+    margin: 2px;*/
     color: rgb(12, 91, 94);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     list-style-image:url("/images/listImg.png");
-    size: 0ch;
 }
 
 #skills {
-    padding: 5px;
-    margin: 5px;
+   /* padding: 5px;
+    margin: 5px;*/
     color: rgb(29, 146, 5);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     list-style:circle;
+}
+section {
+    padding: 10px;
+    margin: 10px;
+    border-color: #67f5bc;
+    border-style:ridge;
 }
 label{
     font-size: 1.25em;
