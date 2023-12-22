@@ -1,3 +1,6 @@
+const navigationHeight = document.querySelector('header').offsetHeight;
+document.documentElement.style.setProperty('--scroll-padding',navigationHeight+"px");
+
 const today = new Date();
 const thisYear = today.getFullYear();
 const footer = document.querySelector("footer");
@@ -7,7 +10,7 @@ copyright.textContent = "Kannika "+ thisYear;
 footer.append(copyright);
 
 const skills = ["HTML", "CSS", "Javascript", "SQL"];
-const skillsSection = document.getElementById("skills");
+const skillsSection = document.getElementById("skillsSection");
 const skillsList =  skillsSection.querySelector("ul");
 
 for (let i = 0; i < skills.length; i++) {
@@ -82,4 +85,3 @@ messageForm[0].addEventListener("submit", (event) => {
     }
 });
 
- 
