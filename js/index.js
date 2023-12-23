@@ -53,13 +53,13 @@ messageForm[0].addEventListener("submit", (event) => {
 
     editButton.addEventListener("click",(e) =>{
         if (editButton.textContent === 'edit') {
-        const editMessage = newMessage.childNodes[2];
-        const inputMessage = document.createElement('input');
-        inputMessage.type="text";
-        inputMessage.value = editMessage.textContent;
-        newMessage.insertBefore(inputMessage,editMessage);
-        newMessage.removeChild(editMessage);
-        editButton.textContent = 'save';
+            const editMessage = newMessage.childNodes[2];
+            const inputMessage = document.createElement('input');
+            inputMessage.type="text";
+            inputMessage.value = editMessage.textContent;
+            newMessage.insertBefore(inputMessage,editMessage);
+            newMessage.removeChild(editMessage);
+            editButton.textContent = 'save';
         } else if (editButton.textContent === 'save') {
             const inputMessage = newMessage.childNodes[2];
             const editMessage = document.createElement('span');

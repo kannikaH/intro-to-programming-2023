@@ -1,18 +1,18 @@
 html {
     scroll-padding-top: var(--scroll-padding,75px);
-  }
-body{
+}
+body {
     background-color: rgb(175, 243, 215);
     color: rgb(7, 19, 85);
     font-family: Helvetica, sans-serif;
     margin: 25px 50px;
 }
-h1{
+h1 {
     color: darkgreen;
     font-size: 2em;
     font-weight: 600;
 }
-h2{
+h2 {
     color: rgb(8, 77, 8);
     font-size: 1.8em;
     font-weight: 600;
@@ -33,11 +33,11 @@ section {
     border-color: #67f5bc;
     border-style:ridge;
 }
-label{
+label {
     font-size: 1.25em;
     color: rgb(189, 30, 210);
 }
-form{
+form {
     padding: 10px 15px;
     margin: 5px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -55,7 +55,7 @@ input {
     font-weight: 300;
     font-size: 20px;
  }
- textarea{
+ textarea {
     width: 25%;
     padding: 8px 10px;
     margin: 5px 0;
@@ -66,7 +66,7 @@ input {
     outline: none;
     font-size: 1rem;
  }
- button{
+ button {
     background-color: #680404;
     border: none;
     color: white;
@@ -77,7 +77,7 @@ input {
     border: 1px solid transparent;
     border-radius: 3px;
  }
- #submitButton{
+ #submitButton {
     background-color: #046843;
     border: none;
     color: white;
@@ -88,7 +88,7 @@ input {
     border: 1px solid transparent;
     border-radius: 3px;
  }
- footer{
+ footer {
     padding: 1px;
     background-color:darkkhaki;
     color:rgb(58, 58, 3);
@@ -104,7 +104,7 @@ input {
     align-items: center;
    
  }
- .navBar{
+ .navBar {
     list-style-type: none;
     padding: 2px;
     overflow: hidden;
@@ -137,24 +137,24 @@ input {
     height: 90vh;
     display: flex;
 }
-.messageGridStyle form{
+.messageGridStyle form {
     display: grid;
     grid-template-columns:max-content 1fr;
     grid-gap: 20px;
     width: 55%;
     background-color: rgb(245, 241, 235);
 }
-.messageGridStyle form .buttonGridStyle{
+.messageGridStyle form .buttonGridStyle {
     width: 80%;
     justify-content: center;
     column-span: all;
     grid-column:  2;
 }
-.messageGridStyle form label{
+.messageGridStyle form label {
     display: block;
     font-size: 18px;
 }
-.messageGridStyle form input, .messageGridStyle form textarea{
+.messageGridStyle form input, .messageGridStyle form textarea {
     font-size: 18px;
     width: 100%;
 }
@@ -179,7 +179,7 @@ input {
         width: 100%;
         margin: 0px;
     }
-    .messageGridStyle form{
+    .messageGridStyle form {
         width: 95%;
         padding: 0px;
         margin: 0px 0px;
