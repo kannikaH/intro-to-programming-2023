@@ -1,8 +1,10 @@
+html {
+    scroll-padding-top: var(--scroll-padding,75px);
+  }
 body{
     background-color: rgb(175, 243, 215);
     color: rgb(7, 19, 85);
     font-family: Helvetica, sans-serif;
-    padding: 20;
     margin: 25px 50px;
 }
 h1{
@@ -16,16 +18,11 @@ h2{
     font-weight: 600;
 }
 #experienceSection {
-    /*padding: 5px;
-    margin: 2px;*/
     color: rgb(12, 91, 94);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     list-style-image:url("/images/listImg.png");
 }
-
-#skills {
-   /* padding: 5px;
-    margin: 5px;*/
+#skillsSection {
     color: rgb(29, 146, 5);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     list-style:circle;
@@ -97,3 +94,106 @@ input {
     color:rgb(58, 58, 3);
     text-align: center;
  }
+ .header {
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    padding:5px;
+    background-color: darkkhaki;
+    align-items: center;
+   
+ }
+ .navBar{
+    list-style-type: none;
+    padding: 2px;
+    overflow: hidden;
+ }
+.navBar a {
+ 	text-align: center;
+	display:block;
+	padding: 5px 5px;
+	font-size: .95em;
+    text-decoration: none;
+}
+.navBar a:hover {
+	color: rgb(235, 115, 17);
+    font-weight: 100;
+    text-decoration: none;
+}
+.flex-container {
+    display: flex;
+    font-size: 15px;
+    row-gap: 10px;
+    column-gap: 10px;
+    flex-direction: column;
+}
+.flex-item {
+    flex-basis:2%;
+    background-color: #9eabf7;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    height: 90vh;
+    display: flex;
+}
+.messageGridStyle form{
+    display: grid;
+    grid-template-columns:max-content 1fr;
+    grid-gap: 20px;
+    width: 55%;
+    background-color: rgb(245, 241, 235);
+}
+.messageGridStyle form .buttonGridStyle{
+    width: 80%;
+    justify-content: center;
+    column-span: all;
+    grid-column:  2;
+}
+.messageGridStyle form label{
+    display: block;
+    font-size: 18px;
+}
+.messageGridStyle form input, .messageGridStyle form textarea{
+    font-size: 18px;
+    width: 100%;
+}
+@media (min-width: 769px) {
+    body {
+        padding-top: 0px;
+    }
+    .header,
+	.navBar {
+		display: flex;
+        list-style: none;
+        align-items: center;
+    }
+}
+@media (max-width: 760px) {
+    img{
+        width: 80%;
+    }
+    body {
+        padding-right: 3px;
+        padding-left: 3px;
+        width: 100%;
+        margin: 0px;
+    }
+    .messageGridStyle form{
+        width: 95%;
+        padding: 0px;
+        margin: 0px 0px;
+    }
+    section {
+        width: 100%;
+        padding-right: 1px;
+        padding-left: 1px;
+    }
+    .header ,footer {
+        width: 100%;
+        padding: 1px;
+        margin: 0px;
+    }
+}
+
+
