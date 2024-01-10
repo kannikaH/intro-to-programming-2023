@@ -195,5 +195,9 @@ input {
         margin: 0px;
     }
 }
-
+#projects {
+    color: rgb(117, 10, 204);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    list-style:circle;
+}
 
