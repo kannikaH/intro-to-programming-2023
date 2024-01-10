@@ -84,4 +84,23 @@ messageForm[0].addEventListener("submit", (event) => {
         }
     }
 });
+ var githubRequest = new XMLHttpRequest();
+ githubRequest.open('Get','https://api.github.com/users/kannikaH/repos');
+ githubRequest.send();
+
+ githubRequest.addEventListener('load', function(event) {
+    const repositories = JSON.parse(this.response);
+    console.log(repositories);
+    const projectSection = document.getElementById("projects");
+    const projectList = projectSection.querySelector("ul");
+
+    for (let i = 0; i < repositories.length; i++) {
+        const project = document.createElement('li');
+        projectList.appendChild(project);
+        const projectLink = document.createElement('a');
+        projectLink.textContent = repositories[i].name+' ['+repositories[i].language+']';
+        projectLink.href = repositories[i].html_url;
+        project.appendChild(projectLink);
+    }
+  });
 
