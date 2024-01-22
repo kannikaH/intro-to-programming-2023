@@ -1,5 +1,5 @@
 const navigationHeight = document.querySelector('header').offsetHeight;
-document.documentElement.style.setProperty('--scroll-padding',navigationHeight+"px");
+document.documentElement.style.setProperty('scroll-padding', navigationHeight+"px");
 
 const today = new Date();
 const thisYear = today.getFullYear();
@@ -57,7 +57,7 @@ messageForm[0].addEventListener("submit", (event) => {
             const inputMessage = document.createElement('input');
             inputMessage.type="text";
             inputMessage.value = editMessage.textContent;
-            newMessage.insertBefore(inputMessage,editMessage);
+            newMessage.insertBefore(inputMessage, editMessage);
             newMessage.removeChild(editMessage);
             editButton.textContent = 'save';
         } else if (editButton.textContent === 'save') {
@@ -65,7 +65,7 @@ messageForm[0].addEventListener("submit", (event) => {
             const editMessage = document.createElement('span');
             editMessage.type="text";
             editMessage.textContent = inputMessage.value;
-            newMessage.insertBefore(editMessage,inputMessage);
+            newMessage.insertBefore(editMessage, inputMessage);
             newMessage.removeChild(inputMessage);
             editButton.textContent = 'edit';
         }
@@ -84,29 +84,7 @@ messageForm[0].addEventListener("submit", (event) => {
         }
     }
 });
-/*
- var githubRequest = new XMLHttpRequest();
- githubRequest.open('Get','https://api.github.com/users/kannikaH/repos');
- githubRequest.send();
-
- githubRequest.addEventListener('load', function(event) {
-    const repositories = JSON.parse(this.response);
-    console.log(repositories);
-    const projectSection = document.getElementById("projects");
-    const projectList = projectSection.querySelector("ul");
-
-    for (let i = 0; i < repositories.length; i++) {
-        const project = document.createElement('li');
-        //projectList.appendChild(project);
-        const projectLink = document.createElement('a');
-        projectLink.textContent = repositories[i].name+' ['+repositories[i].language+']';
-        projectLink.href = repositories[i].html_url;
-        project.appendChild(projectLink);
-        projectList.appendChild(project);
-    }
-  });
-*/
-  fetch('https://api.github.com/users/kannikaH/repos')
+fetch('https://api.github.com/users/kannikaH/repos')
     .then(response => {
         return response.json();
     })
