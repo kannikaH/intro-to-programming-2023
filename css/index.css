@@ -1,41 +1,43 @@
-html {
-    scroll-padding-top: var(--scroll-padding,75px);
-}
 body {
     background-color: rgb(175, 243, 215);
-    color: rgb(7, 19, 85);
+    color: rgb(2, 12, 63);
     font-family: Helvetica, sans-serif;
     margin: 25px 50px;
 }
 h1 {
-    color: darkgreen;
+    color: rgb(10, 10, 10);
     font-size: 2em;
     font-weight: 600;
 }
 h2 {
-    color: rgb(8, 77, 8);
+    color: rgb(12, 11, 11);
     font-size: 1.8em;
     font-weight: 600;
 }
 #experienceSection {
     color: rgb(12, 91, 94);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    list-style-image:url("/images/listImg.png");
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style-image: url("/images/listImg.png");
 }
 #skillsSection {
-    color: rgb(29, 146, 5);
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    list-style:circle;
+    color:  rgb(12, 91, 94);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    list-style: circle;
+}
+#aboutSection img {
+    max-width: 15%;
+    border-radius: 50%;
+}
+#projects {
+    color: rgb(39, 7, 65);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    list-style: circle;
 }
 section {
     padding: 10px;
     margin: 10px;
-    border-color: #67f5bc;
-    border-style:ridge;
-}
-label {
-    font-size: 1.25em;
-    color: rgb(189, 30, 210);
+    color: rgb(12, 91, 94);
+    font-size: 16px;
 }
 form {
     padding: 10px 15px;
@@ -54,8 +56,8 @@ input {
     outline: none;
     font-weight: 300;
     font-size: 20px;
- }
- textarea {
+}
+textarea {
     width: 25%;
     padding: 8px 10px;
     margin: 5px 0;
@@ -65,8 +67,8 @@ input {
     transition: 0.2s;
     outline: none;
     font-size: 1rem;
- }
- button {
+}
+button {
     background-color: #680404;
     border: none;
     color: white;
@@ -76,8 +78,8 @@ input {
     box-shadow: rgb(248, 127, 123) 0 1px 0 0 inset;
     border: 1px solid transparent;
     border-radius: 3px;
- }
- #submitButton {
+}
+#submitButton {
     background-color: #046843;
     border: none;
     color: white;
@@ -87,80 +89,133 @@ input {
     box-shadow: rgb(6, 143, 52) 0 1px 0 0 inset;
     border: 1px solid transparent;
     border-radius: 3px;
- }
- footer {
+}
+footer {
     padding: 1px;
-    background-color:darkkhaki;
+    background-color: darkkhaki;
     color:rgb(58, 58, 3);
     text-align: center;
- }
- .header {
+}
+.header {
     flex-direction: column;
     align-items: center;
     position: sticky;
     top: 0;
-    padding:5px;
+    padding: 5px;
     background-color: darkkhaki;
     align-items: center;
-   
- }
- .navBar {
+}
+.navBar {
     list-style-type: none;
     padding: 2px;
     overflow: hidden;
- }
+}
 .navBar a {
  	text-align: center;
-	display:block;
-	padding: 5px 5px;
-	font-size: .95em;
+	display: block;
+	padding: 10px 10px;
+	font-size: 20px;
     text-decoration: none;
 }
 .navBar a:hover {
-	color: rgb(235, 115, 17);
-    font-weight: 100;
+	color: rgb(184, 252, 212);
+    font-weight: 200;
     text-decoration: none;
+}
+.container {
+    display: flex;
+    height: 10%;
+    row-gap: 0px;
+    flex-direction: column;
+    text-align: center;
+    width: 95%;
+}
+.text {
+    font-size: 16px;
+    float: left;
 }
 .flex-container {
     display: flex;
+    width: 90%;
     font-size: 15px;
     row-gap: 10px;
     column-gap: 10px;
     flex-direction: column;
 }
 .flex-item {
-    flex-basis:2%;
+    flex-basis: 2%;
     background-color: #9eabf7;
     color: #fff;
     padding: 10px;
     border-radius: 10px;
     height: 90vh;
-    display: flex;
+    justify-content: space-between;
+}
+.emphasis {
+    float: right;
 }
 .messageGridStyle form {
     display: grid;
-    grid-template-columns:max-content 1fr;
+    grid-template-columns: max-content 1fr;
     grid-gap: 20px;
     width: 55%;
-    background-color: rgb(245, 241, 235);
+    background-color: rgba(197, 199, 199, 0.829);
 }
 .messageGridStyle form .buttonGridStyle {
     width: 80%;
     justify-content: center;
     column-span: all;
-    grid-column:  2;
+    grid-column: 2;
 }
 .messageGridStyle form label {
     display: block;
     font-size: 18px;
+    padding-left: 2px;
+    color: rgb(17, 17, 17);
 }
 .messageGridStyle form input, .messageGridStyle form textarea {
     font-size: 18px;
-    width: 100%;
+    width: 80%;
 }
-@media (min-width: 769px) {
+/* 
+  ##Device = Mobiles 
+*/
+@media (max-width: 787px) {
+    body {
+        padding-right: 3px;
+        padding-left: 3px;
+        width: 100%;
+        margin: 0px;
+    }
+    img{
+        width: 80%;
+    }
+    .messageGridStyle form {
+        width: 95%;
+        grid-gap: 2px;
+        padding: 0px;
+        margin: 0px 0px;
+    }
+    section{
+        width: 90%;
+    }
+    .messages li{
+        width: 80%;
+        padding-right: 1px;
+        padding-left: 1px;
+    }
+
+    .header ,footer {
+        width: 100%;
+    }
+}
+/* 
+  ##Device = Tablets, Ipads
+*/
+@media (min-width: 768px) {
     body {
         padding-top: 0px;
+        width: 100%;
     }
     .header,
 	.navBar {
@@ -168,36 +223,29 @@ input {
         list-style: none;
         align-items: center;
     }
-}
-@media (max-width: 760px) {
-    img{
+    .header ,footer {
+        width: 100%;
+    }
+    img {
         width: 80%;
     }
+}
+/* 
+  ##Device = Desktops
+*/
+@media only screen and (min-width : 1024px) {
     body {
         padding-right: 3px;
         padding-left: 3px;
         width: 100%;
         margin: 0px;
     }
-    .messageGridStyle form {
-        width: 95%;
-        padding: 0px;
-        margin: 0px 0px;
-    }
-    section {
-        width: 100%;
-        padding-right: 1px;
-        padding-left: 1px;
-    }
     .header ,footer {
         width: 100%;
-        padding: 1px;
-        margin: 0px;
+    }
+    img {
+        width: 80%;
     }
 }
-#projects {
-    color: rgb(117, 10, 204);
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    list-style:circle;
-}
+
 
